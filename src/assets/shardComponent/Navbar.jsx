@@ -12,7 +12,7 @@ const Navbar = () => {
 
         <NavLink
             to='/books' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn btn-outline btn-success border-green-500 mr-3' : 'text-[16px] font-medium btn border-green-500 mr-3'} >
-            Listed Books
+            Updated profile
         </NavLink>
 
 

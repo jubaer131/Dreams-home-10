@@ -1,0 +1,107 @@
+[
+    {
+        "image": "https://i.ibb.co/PNwnxyf/bryan-angelo-1-Jt-f-Mmw9-E-unsplash.jpg",
+        "estate_title": "Luxury Villa in Beverly Hills",
+        "id": "001",
+        "segment_name": "Residential",
+        "description": "This exquisite villa offers unparalleled luxury living in the heart of Beverly Hills. Featuring stunning architecture, expansive living spaces, and breathtaking views.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "6000 sq ft",
+        "location": "Beverly Hills, California",
+        "facilities": [
+            "Living Room",
+            "Swimming Pool",
+            "Gym",
+            "Home Theater"
+        ],
+        "view_property_button": "View Property"
+    },
+    {
+        "image": "https://i.ibb.co/g7Lrb83/diane-picchiottino-e-Oh3-Kie2-Kr0-unsplash.jpg",
+        "estate_title": "Modern Apartment in Manhattan",
+        "id": "002",
+        "segment_name": "Residential",
+        "description": "Sleek and sophisticated, this modern apartment offers the epitome of urban living in the heart of Manhattan. Enjoy stunning skyline views and luxury amenities.",
+        "price": "$3,500,000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "Manhattan, New York",
+        "facilities": [
+            "Open Kitchen",
+            "Fitness Center",
+            "Concierge Service"
+        ],
+        "view_property_button": "View Property"
+    },
+    {
+        "image": "https://i.ibb.co/0rwyhXM/jordi-vich-navarro-ayc-Em-Pqn-YGw-unsplash.jpg",
+        "estate_title": "Cozy Townhouse in San Francisco",
+        "id": "003",
+        "segment_name": "Residential",
+        "description": "Nestled in a charming neighborhood, this cozy townhouse offers a perfect blend of comfort and convenience. Ideal for families seeking urban living with a touch of tranquility.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "San Francisco, California",
+        "facilities": [
+            "Backyard Garden",
+            "Fireplace",
+            "Garage"
+        ],
+        "view_property_button": "View Property"
+    },
+    {
+        "image": "https://i.ibb.co/qd5k5rr/ryan-miglinczy-02n9-v-d1y-Y-unsplash.jpg",
+        "estate_title": "Luxury Penthouse in Dubai Marina",
+        "id": "004",
+        "segment_name": "Residential",
+        "description": "Experience the height of luxury in this stunning penthouse overlooking Dubai Marina. Boasting lavish interiors, private pool, and panoramic views of the skyline.",
+        "price": "$7,500,000",
+        "status": "sale",
+        "area": "8000 sq ft",
+        "location": "Dubai Marina, Dubai",
+        "facilities": [
+            "Private Pool",
+            "Spa",
+            "Terrace",
+            "Concierge Service"
+        ],
+        "view_property_button": "View Property"
+    },
+    {
+        "image": "https://i.ibb.co/RQSby23/3d-electric-car-building.jpg",
+        "estate_title": "Seaside Villa in Malibu",
+        "id": "005",
+        "segment_name": "Residential",
+        "description": "Escape to this luxurious seaside villa in the exclusive enclave of Malibu. Enjoy direct beach access, stunning ocean views, and top-of-the-line amenities.",
+        "price": "$10,000,000",
+        "status": "sale",
+        "area": "7000 sq ft",
+        "location": "Malibu, California",
+        "facilities": [
+            "Beach Access",
+            "Infinity Pool",
+            "Outdoor Kitchen",
+            "Home Automation"
+        ],
+        "view_property_button": "View Property"
+    },
+    {
+        "image": "https://i.ibb.co/PjR6c70/nick-kelly-4-Te14f06m-ZM-unsplash.jpg",
+        "estate_title": "Historic Brownstone in Brooklyn",
+        "id": "006",
+        "segment_name": "Residential",
+        "description": "Step back in time with this meticulously restored historic brownstone in the heart of Brooklyn. Featuring original details, modern amenities, and a private garden oasis.",
+        "price": "$2,800,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "Brooklyn, New York",
+        "facilities": [
+            "Original Details",
+            "Private Garden",
+            "Roof Deck"
+        ],
+        "view_property_button": "View Property"
+    }
+]
