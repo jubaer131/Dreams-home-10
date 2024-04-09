@@ -1,0 +1,80 @@
+[
+    {
+        "image": "https://i.ibb.co/HKqqNFQ/3d-render-house-countryside.jpg",
+        "name": "Sunrise Heights",
+        "location": "City Center",
+        "facilities": [
+            "Swimming Pool",
+            "Gym",
+            "Playground",
+            "Clubhouse"
+        ],
+        "description": "Discover luxurious urban living at Sunrise Heights. Located in the vibrant City Center, this modern development offers an array of amenities including a swimming pool, gym, playground, and clubhouse. Enjoy breathtaking views of the city skyline and convenient access to shopping, dining, and entertainment. With spacious layouts and premium finishes, Sunrise Heights provides the perfect blend of comfort and convenience.",
+        "price": "$250,000"
+    },
+    {
+        "image": "https://i.ibb.co/D5D5kXY/samuel-ferrara-u-Nvgvo2cs7k-unsplash.jpg",
+        "name": "Ocean View Villas",
+        "location": "Coastal Retreat",
+        "facilities": [
+            "Private Beach Access",
+            "Tennis Courts",
+            "Spa",
+            "Restaurant"
+        ],
+        "description": "Escape to paradise at Ocean View Villas, nestled along the serene coastline of our coastal retreat. Enjoy panoramic ocean views, private beach access, and resort-style amenities including tennis courts, a spa, and a restaurant. Each villa offers luxurious living spaces with premium finishes and expansive outdoor areas. Experience the ultimate in coastal luxury at Ocean View Villas.",
+        "price": "$1,200,000"
+    },
+    {
+        "image": "https://i.ibb.co/KD3zFKC/bailey-anselme-Bkp3g-Lygye-A-unsplash.jpg",
+        "name": "Greenwood Gardens",
+        "location": "Suburban Oasis",
+        "facilities": [
+            "Community Park",
+            "Walking Trails",
+            "Fitness Center",
+            "Community Center"
+        ],
+        "description": "Experience suburban bliss at Greenwood Gardens, a peaceful oasis surrounded by lush greenery. Take advantage of community amenities including a park, walking trails, fitness center, and community center. These modern townhouses offer spacious layouts, high-end finishes, and a tranquil setting close to urban conveniences.",
+        "price": "$500,000"
+    },
+    {
+        "image": "https://i.ibb.co/xftntsg/portrait-smiling-architect-man-holding-cellphone-hard-hat-with-blueprint-construction-site.jpg",
+        "name": "Skyline Towers",
+        "location": "Downtown Skyline",
+        "facilities": [
+            "Rooftop Pool",
+            "Sky Lounge",
+            "Fitness Center",
+            "Concierge Service"
+        ],
+        "description": "Live in luxury at Skyline Towers, located in the heart of the downtown skyline. Enjoy stunning city views from the rooftop pool and sky lounge, stay fit in the state-of-the-art fitness center, and receive top-notch service with concierge assistance. These sleek, contemporary apartments offer upscale living spaces with modern amenities and unparalleled convenience.",
+        "price": "$750,000"
+    },
+    {
+        "image": "https://i.ibb.co/94GP132/frames-for-your-heart-m-R1-CIDdu-GLc-unsplash.jpg",
+        "name": "Lakefront Retreat",
+        "location": "Scenic Lakeside",
+        "facilities": [
+            "Lake Access",
+            "Boat Dock",
+            "Picnic Area",
+            "Fitness Trail"
+        ],
+        "description": "Embrace lakeside living at Lakefront Retreat, where scenic beauty meets modern convenience. Enjoy direct lake access, a private boat dock, and a tranquil picnic area surrounded by nature. Stay active with a fitness trail along the lakeshore, and relax in luxury with premium finishes and spacious layouts in each home.",
+        "price": "$600,000"
+    },
+    {
+        "image": "https://i.ibb.co/WF3bsYZ/michal-prucha-q-VKLn-Abq-Z-0-unsplash.jpg",
+        "name": "Mountain View Estates",
+        "location": "Picturesque Mountainside",
+        "facilities": [
+            "Mountain Views",
+            "Hiking Trails",
+            "Outdoor Fireplace",
+            "Community Garden"
+        ],
+        "description": "Experience the majesty of mountain living at Mountain View Estates, nestled in the picturesque mountainside. Enjoy breathtaking views, explore hiking trails, and gather around the outdoor fireplace with friends and family. Each home features spacious layouts, high-end finishes, and access to a community garden for those with a green thumb.",
+        "price": "$800,000"
+    }
+]

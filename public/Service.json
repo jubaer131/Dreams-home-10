@@ -1,0 +1,42 @@
+[
+    {
+        "category": "entertainment",
+        "image": "https://i.ibb.co/mcGyQ1H/full-shot-happy-kids-jumping-trampoline.jpg",
+        "title": "Entertainment Hub",
+        "description": "Welcome to our Entertainment Hub, where you can escape into a world of fun and excitement. Our hub is designed to cater to all your entertainment needs, providing a diverse range of activities for individuals and families alike. Whether you're a movie buff, a gamer, or just looking for a place to relax, we have something for everyone. Enjoy the latest blockbuster movies in our state-of-the-art theaters, challenge your friends to a game of pool or foosball, or simply unwind in our cozy lounge areas. With our friendly staff and vibrant atmosphere, you'll never want to leave! Click below to explore all the entertainment options we have to offer.",
+        "details_button": {
+            "text": "Show Details",
+            "link": "/entertainment_details"
+        }
+    },
+    {
+        "category": "shopping",
+        "image": "https://i.ibb.co/dQVyJfK/back-view-woman-going-down-stairs.jpg",
+        "title": "Shopping Paradise",
+        "description": "Experience shopping like never before at our Shopping Paradise. With a wide variety of stores and boutiques, you'll find everything you need and more right at your fingertips. From fashion to electronics, home goods to gourmet foods, our shopping center has it all. Spend the day browsing through the latest trends, treating yourself to something special, or finding the perfect gift for a loved one. With convenient parking, delicious dining options, and unbeatable deals, your shopping experience will be nothing short of extraordinary. Click below to discover all the shopping delights waiting for you.",
+        "details_button": {
+            "text": "Show Details",
+            "link": "/shopping_details"
+        }
+    },
+    {
+        "category": "sports",
+        "image": "https://i.ibb.co/ZYrCVFK/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-h.jpg",
+        "title": "Sport and leisure",
+        "description": "Welcome to Sport and leisure, your ultimate destination for fitness and fun. Whether you're a seasoned athlete or just starting out, our state-of-the-art facilities and expert staff are here to help you reach your goals. Dive into our Olympic-sized swimming pool, challenge your friends to a game of basketball or tennis, or join one of our group fitness classes for a high-energy workout. With top-of-the-line equipment, personalized training programs, and a supportive community atmosphere, achieving your fitness dreams has never been easier. Click below to learn more about all the exciting activities available at Sports Haven.",
+        "details_button": {
+            "text": "Show Details",
+            "link": "/sports_details"
+        }
+    },
+    {
+        "category": "dining",
+        "image": "https://i.ibb.co/9t5Fcyr/yummy-delights-table.jpg",
+        "title": "Gourmet Delights",
+        "description": "Indulge your taste buds at Gourmet Delights, where culinary excellence meets unparalleled hospitality. From gourmet restaurants to cozy cafes, our dining options are sure to satisfy even the most discerning palates. Enjoy a leisurely brunch with friends, a romantic dinner with your special someone, or a quick bite on the go – whatever your craving, we have it covered. With fresh, locally-sourced ingredients and innovative cuisine crafted by our talented chefs, every meal is an unforgettable experience. Click below to explore our dining options and reserve your table today.",
+        "details_button": {
+            "text": "Show Details",
+            "link": "/dining_details"
+        }
+    }
+]

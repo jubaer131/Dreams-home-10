@@ -1,8 +1,8 @@
-
+import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
 
-    const { estate_title, description, view_property_button, image } = item
+    const { estate_title, description, view_property_button, image, id } = item
 
 
     console.log(item)
@@ -16,7 +16,8 @@ const Card = ({ item }) => {
                 </h2>
                 <p>{description}</p>
                 <div className="card-actions justify-start">
-                    <button className="btn">{view_property_button}</button>
+                    <Link to={`/card/${id}`}
+                        className="text-blue-500 font-bold"> <button className="btn">{view_property_button}</button> </Link>
                 </div>
             </div>
         </div>
