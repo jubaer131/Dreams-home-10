@@ -1,8 +1,12 @@
 
 
+
 const Footer = () => {
+
+
+
     return (
-        <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mb-6 w-full">
+        <footer className="footer footer-center p-10 bg-teal-300 text-base-content rounded mb-6 w-full">
             <nav className="grid grid-flow-col gap-4">
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
@@ -18,6 +22,7 @@ const Footer = () => {
             </nav>
             <aside>
                 <p>Copyright © 2024 - All right reserved by Dreams Home Industries Ltd</p>
+
             </aside>
         </footer>
     );

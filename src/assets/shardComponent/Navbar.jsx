@@ -1,29 +1,44 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { authContest } from "../layout/AuthProvider";
 
 const Navbar = () => {
 
     const links = <>
 
         <NavLink
-            to='/' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn btn-outline btn-success border-green-500 mr-3' : 'text-[16px] font-medium btn  border-green-500 mr-3'}>
+            to='/' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn bg-white  border-green-500 mr-3' : 'text-[16px] font-medium btn  border-green-500 mr-3 bg-white'}>
             Home
         </NavLink>
 
 
         <NavLink
-            to='/books' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn btn-outline btn-success border-green-500 mr-3' : 'text-[16px] font-medium btn border-green-500 mr-3'} >
+            to="/profile" className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn  border-green-500 mr-3 bg-white' : 'text-[16px] font-medium btn border-green-400 mr-3 bg-white'} >
             Updated profile
         </NavLink>
 
 
         <NavLink
-            to='/pages' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn btn-outline btn-success border-green-500 mr-3' : 'text-[16px] font-medium btn border-green-500 mr-3'} >
+            to='/pages' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn   border-green-500 mr-3 bg-white' : 'text-[16px] font-medium btn border-green-400 mr-3 bg-white'} >
             Pages To Read
         </NavLink>
 
     </>
+    const { user, logout } = useContext(authContest)
+
+    const handlelogout = () => {
+        logout()
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+
+
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-teal-500 rounded-2xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,7 +56,22 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+                {
+                    user ? <>
+                        <div className="tooltip mr-4 tooltip-bottom" data-tip={user.email}>
+
+                            <button className="">  <div tabIndex={0} role="button" className=" avatar">
+                                <div className="w-[45px] rounded-full">
+                                    <img alt="https://i.ibb.co/ZHPfK4T/modern-business-center.jpg" src={user.photoURL} />
+                                </div>
+                            </div></button>
+                        </div>
+
+                        <button onClick={handlelogout} className="btn">Logout </button>
+                    </> : <Link to="/login">  <a className="btn">Login</a> </Link>
+                }
+
+
             </div>
         </div>
     );
