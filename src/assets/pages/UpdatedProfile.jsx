@@ -1,45 +1,80 @@
 import { useContext } from "react";
 import { authContest } from "../layout/AuthProvider";
 import Navbar from "../shardComponent/Navbar";
-
+import { getAuth, updateProfile } from "firebase/auth";
+import { Result } from "postcss";
 
 const UpdatedProfile2 = () => {
 
-    const { user } = useContext(authContest)
+    const { user, } = useContext(authContest)
     console.log(user)
     const { displayName, email, photoURL, uid, lastRefreshAt, providerId,
     } = user
+
+    const handlePhoto = () => {
+
+        updateProfile(Result.user, {
+            displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
+        }).then(() => {
+            // Profile updated!
+            // ...
+        }).catch((error) => {
+            // An error occurred
+            // ...
+        });
+
+
+
+
+    }
+
+
     return (
-        <div className="max-w-6xl mx-auto">
+        <section className="py-6 dark:bg-gray-100 dark:text-gray-900 ">
             <Navbar></Navbar>
-            <div className=" p-8 sm:flex sm:space-x-6 dark:bg-gray-50 dark:text-gray-800">
-                <div className="flex-shrink-0 w-full mb-6 h-44 sm:h-32 sm:w-32 sm:mb-0">
-                    <img src={photoURL} alt="" className="object-cover object-center w-full h-full rounded dark:bg-gray-500" />
-                </div>
-                <div className="flex flex-col space-y-4">
-                    <div>
-                        <h2 className="text-2xl font-semibold">{displayName}</h2>
-                        <span className="text-sm dark:text-gray-600">provider : {providerId}</span>
-                    </div>
-                    <div className="space-y-1">
-                        <span className="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Email address" className="w-4 h-4">
-                                <path fill="currentColor" d="M274.6,25.623a32.006,32.006,0,0,0-37.2,0L16,183.766V496H496V183.766ZM464,402.693,339.97,322.96,464,226.492ZM256,51.662,454.429,193.4,311.434,304.615,256,268.979l-55.434,35.636L57.571,193.4ZM48,226.492,172.03,322.96,48,402.693ZM464,464H48V440.735L256,307.021,464,440.735Z"></path>
-                            </svg>
-                            <span className="dark:text-gray-600">{email}</span>
-                        </span>
-                        <span className="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Phonenumber" className="w-4 h-4">
-                                <path fill="currentColor" d="M449.366,89.648l-.685-.428L362.088,46.559,268.625,171.176l43,57.337a88.529,88.529,0,0,1-83.115,83.114l-57.336-43L46.558,362.088l42.306,85.869.356.725.429.684a25.085,25.085,0,0,0,21.393,11.857h22.344A327.836,327.836,0,0,0,461.222,133.386V111.041A25.084,25.084,0,0,0,449.366,89.648Zm-20.144,43.738c0,163.125-132.712,295.837-295.836,295.837h-18.08L87,371.76l84.18-63.135,46.867,35.149h5.333a120.535,120.535,0,0,0,120.4-120.4v-5.333l-35.149-46.866L371.759,87l57.463,28.311Z"></path>
-                            </svg>
 
-                            <span className="dark:text-gray-600">+25 381 77 983</span>
-                        </span>
+
+            <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x lg:my-20">
+                <div className="py-6 md:py-0 md:px-6 ">
+                    <img src={photoURL} alt="" className="object-cover object-center w-full lg:h-full  dark:bg-gray-500 rounded-full" />
+                    <h1 className="text-4xl font-bold">Get in touch</h1>
+                    <p className="pt-2 pb-4">Update profile</p>
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-semibold">Name : {displayName}</h2>
+                        <p className="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
+                                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+                            </svg>
+                            <span> Address, 9999 City</span>
+                        </p>
+                        <p className="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                            </svg>
+                            <span>Mobile : 123456789</span>
+                        </p>
+                        <p className="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <span> {email}</span>
+                        </p>
                     </div>
                 </div>
+                <form noValidate="" className="flex md:items-center flex-col py-6 space-y-6 md:py-0 md:px-6 lg:mt-32">
+                    <label className="block">
+                        <span className="mb-1">Update Photo</span>
+                        <input type="url" placeholder="Photo" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
+                    </label>
+
+
+                    <button onClick={handlePhoto} type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
+                </form>
             </div>
+        </section>
 
-        </div>
+
     );
 };
 

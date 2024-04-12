@@ -6,6 +6,8 @@ import ErrorPage from "../pages/ErrorPage";
 import Login from "../loginForm/Login";
 import Register from "../loginForm/Register";
 import UpdatedProfile from "../pages/UpdatedProfile";
+import PriveRout from "./PriveRout";
+import AboutUs from "../pages/AboutUs";
 
 
 
@@ -33,8 +35,12 @@ const router = createBrowserRouter([
             },
             {
                 path: "/profile",
-                element: <UpdatedProfile></UpdatedProfile>,
-            }
+                element: <PriveRout><UpdatedProfile></UpdatedProfile>,</PriveRout>
+            },
+            {
+                path: "/about",
+                element: <AboutUs></AboutUs>,
+            },
         ]
     },
 ]);

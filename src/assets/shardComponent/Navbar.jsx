@@ -19,12 +19,13 @@ const Navbar = () => {
 
 
         <NavLink
-            to='/pages' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn   border-green-500 mr-3 bg-white' : 'text-[16px] font-medium btn border-green-400 mr-3 bg-white'} >
-            Pages To Read
+            to='/about' className={({ isActive }) => isActive ? 'text-[16px] text-green-500 font-medium btn   border-green-500 mr-3 bg-white' : 'text-[16px] font-medium btn border-green-400 mr-3 bg-white'} >
+            About Us
         </NavLink>
 
     </>
     const { user, logout } = useContext(authContest)
+    console.log(user)
 
     const handlelogout = () => {
         logout()
@@ -62,7 +63,7 @@ const Navbar = () => {
 
                             <button className="">  <div tabIndex={0} role="button" className=" avatar">
                                 <div className="w-[45px] rounded-full">
-                                    <img alt="https://i.ibb.co/ZHPfK4T/modern-business-center.jpg" src={user.photoURL} />
+                                    <img alt="" src={user.photoURL} />
                                 </div>
                             </div></button>
                         </div>
