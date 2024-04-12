@@ -13,15 +13,15 @@ const UpdatedProfile2 = () => {
 
     const handlePhoto = () => {
 
-        updateProfile(Result.user, {
-            displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
-        }).then(() => {
-            // Profile updated!
-            // ...
-        }).catch((error) => {
-            // An error occurred
-            // ...
-        });
+        // updateProfile(Result.user, {
+        //     displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
+        // }).then(() => {
+        //     // Profile updated!
+        //     // ...
+        // }).catch((error) => {
+        //     // An error occurred
+        //     // ...
+        // });
 
 
 

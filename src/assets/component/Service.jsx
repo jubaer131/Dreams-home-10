@@ -8,14 +8,14 @@ const Service = ({ item }) => {
         <div >
             <article className="flex flex-col dark:bg-gray-50">
                 <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                    <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={image} />
+                    <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 animate__animated animate__bounce animate__delay-5s" src={image} />
                 </a>
                 <div className="flex flex-col flex-1 p-6">
                     <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                    <a rel="noopener noreferrer" href="#" className="text-[18px] font-bold tracking-wider uppercase hover:underline dark:text-violet-600">{title}</a>
+                    <a rel="noopener noreferrer" href="#" className="text-[18px] font-bold tracking-wider  hover:underline dark:text-violet-600">{title}</a>
                     <h3 className="flex-1 py-2 text-[16px] font-medium leading-snug">{description.slice(0, 150)}</h3>
                     <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-                        <span className="btn">{details_button.text}</span>
+                        {/* <span className="btn">{details_button.text}</span> */}
 
                     </div>
                 </div>
