@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet-async";
 const Register = () => {
 
     const navigate = useNavigate()
-    const { creatregistation } = useContext(authContest)
+    const { creatregistation, updateProfilePicture } = useContext(authContest)
 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -63,21 +63,20 @@ const Register = () => {
                 // Signed up 
                 console.log(result.user)
                 toast.success('successfully register') // Call notify function here
-                e.target.reset()
+                // e.target.reset()
                 // navigate('/login')
 
+                updateProfilePicture(name, photo)
+                    .then((result) => {
 
-                // const auth = getAuth();
-                updateProfile(result.user, {
-                    displayName: name,
-                    photoURL: "https://i.ibb.co/wSwsGFQ/juho-luomala-j-Pkv8ta-RWM8-unsplash.jpg",
-                }).then(() => {
-                    // Profile updated!
-                    // ...
-                }).catch((error) => {
-                    // An error occurred
-                    // ...
-                });
+                    })
+                    .catch((error) => {
+                        console.log(error)
+                    })
+
+
+
+
             })
             .catch((error) => {
                 console.log(error)

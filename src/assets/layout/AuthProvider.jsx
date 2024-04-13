@@ -3,6 +3,7 @@ import { auth } from "./firebase/Firebase.config";
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { GithubAuthProvider } from "firebase/auth";
+import { updateProfile } from "firebase/auth";
 
 export const authContest = createContext()
 const AuthProvider = ({ children }) => {
@@ -36,6 +37,14 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, GithubProvider)
     }
 
+    const updateProfilePicture = (name, photo) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photo,
+        })
+    }
+
+
+
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
@@ -49,7 +58,7 @@ const AuthProvider = ({ children }) => {
 
     }, [])
 
-    const authinfo = { creatUser, creatregistation, user, logout, googleSignin, githubSignin }
+    const authinfo = { creatUser, creatregistation, user, logout, googleSignin, githubSignin, updateProfilePicture }
 
 
     return (
