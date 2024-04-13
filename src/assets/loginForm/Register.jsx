@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { getAuth, updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
@@ -86,6 +87,10 @@ const Register = () => {
 
     return (
         <div className=" mx-auto bg-[url('https://i.ibb.co/wSwsGFQ/juho-luomala-j-Pkv8ta-RWM8-unsplash.jpg')] bg-cover min-h-screen">
+
+            <Helmet>
+                <title>Register page</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="hero  ">
                 <div className="hero-content flex-col ">

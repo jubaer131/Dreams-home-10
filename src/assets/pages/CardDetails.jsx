@@ -5,6 +5,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { GiFamilyHouse } from "react-icons/gi";
 import { IoIosPricetag } from "react-icons/io";
 import { FaDollarSign } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 
 const CardDetails = () => {
@@ -31,7 +32,9 @@ const CardDetails = () => {
     return (
         <div>
             <Navbar></Navbar>
-
+            <Helmet>
+                <title>{`segment_name`}||{`estate_title`}</title>
+            </Helmet>
             <div className="card lg:card-side bg-base-100 shadow-xl gap-6 px-8 mt-10 container mx-auto">
                 <div className="lg:w-6/12 ">
                     <figure><img className="w-full h-[650px] bg-cover bg-no-repeat rounded-3xl" src={image} alt="Album" /></figure>

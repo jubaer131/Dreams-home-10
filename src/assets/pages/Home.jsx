@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Footer from "../component/Footer";
 import OurProjects from "../component/OurProjects";
 import Services from "../component/Services";
@@ -9,6 +10,9 @@ import Navbar from "../shardComponent/Navbar";
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div className="max-w-7xl mx-auto">
                 <Navbar></Navbar>
                 <Slider></Slider>

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { authContest } from "../layout/AuthProvider";
-
+import 'animate.css';
 const Navbar = () => {
 
     const links = <>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className=" font-bold text-3xl">Dreams <span className="font-bold text-3xl text-white">Home</span></a>
+                <a className=" font-bold text-3xl ">Dreams <span className="font-bold text-3xl text-white animate__animated animate__fadeInRightBig">Home</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

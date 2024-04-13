@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import 'animate.css';
 
+
 const Card = ({ item }) => {
 
     const { estate_title, description, view_property_button, image, id } = item
@@ -9,6 +10,7 @@ const Card = ({ item }) => {
     console.log(item)
     return (
         <div className="card  bg-base-100 shadow-2xl rounded-2xl ">
+
             <figure ><img className="rounded-[40px] lg:max-h-[380px] lg:w-full p-6  " src={image} alt="Shoes" /></figure>
             <div className="card-body space-y-4">
                 <h2 className="card-title ">

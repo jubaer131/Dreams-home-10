@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGoogle } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -60,6 +61,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Login page</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="hero min-h-screen bg-base-200 bg-[url('https://i.ibb.co/ZHPfK4T/modern-business-center.jpg')] bg-cover">
 

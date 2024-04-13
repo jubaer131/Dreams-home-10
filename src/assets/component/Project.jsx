@@ -1,3 +1,7 @@
+import 'animate.css';
+
+
+
 
 
 const Project = ({ item }) => {
@@ -15,7 +19,7 @@ const Project = ({ item }) => {
                 </div>
                 <div className="space-y-2">
                     <a rel="noopener noreferrer" href="#" className="block">
-                        <h3 className="text-xl font-semibold dark:text-violet-600">{name}</h3>
+                        <h3 className="text-xl font-semibold dark:text-violet-600 animate__animated animate__bounce">{name}</h3>
                     </a>
                     <p className="leading-snug dark:text-gray-600">{description.slice(0, 100)}</p>
                     <ul className="p-5">

@@ -3,6 +3,7 @@ import { authContest } from "../layout/AuthProvider";
 import Navbar from "../shardComponent/Navbar";
 import { getAuth, updateProfile } from "firebase/auth";
 import { Result } from "postcss";
+import { Helmet } from "react-helmet-async";
 
 const UpdatedProfile2 = () => {
 
@@ -33,7 +34,9 @@ const UpdatedProfile2 = () => {
         <section className="py-6 dark:bg-gray-100 dark:text-gray-900 ">
             <Navbar></Navbar>
 
-
+            <Helmet>
+                <title>updateProfile</title>
+            </Helmet>
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x lg:my-20">
                 <div className="py-6 md:py-0 md:px-6 ">
                     <img src={photoURL} alt="" className="object-cover object-center w-full lg:h-full  dark:bg-gray-500 rounded-full" />
