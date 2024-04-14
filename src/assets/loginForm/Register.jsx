@@ -75,7 +75,7 @@ const Register = () => {
                     })
 
 
-
+                // e.target.reset()
 
             })
             .catch((error) => {

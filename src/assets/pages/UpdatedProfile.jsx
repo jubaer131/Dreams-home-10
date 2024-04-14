@@ -11,7 +11,7 @@ const UpdatedProfile2 = () => {
 
     const { user, } = useContext(authContest)
     console.log(user)
-    const { displayName, email, photoURL, providerId,
+    const { displayName, email, photoURL,
     } = user
 
     const updatePhoto = (e) => {
@@ -20,6 +20,7 @@ const UpdatedProfile2 = () => {
         const photo = e.target.photo.value;
 
         updateProfilePicture(name, photo)
+
             .then((result) => {
                 console.log(result)
                 alert("successfully registation")
@@ -92,7 +93,7 @@ const UpdatedProfile2 = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn bg-teal-500 ">Login</button>
                         </div>
                     </form>
 

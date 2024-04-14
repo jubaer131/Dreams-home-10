@@ -8,36 +8,38 @@ import { updateProfile } from "firebase/auth";
 export const authContest = createContext()
 const AuthProvider = ({ children }) => {
     const [user, setuser] = useState('')
+    const [loading, setloading] = useState(true)
 
     const provider = new GoogleAuthProvider();
     const GithubProvider = new GithubAuthProvider();
 
     const creatregistation = (email, password) => {
-
+        setloading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
 
     const creatUser = (email, password) => {
-
+        setloading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     const logout = () => {
-
+        setloading(false)
         return signOut(auth)
     }
 
     const googleSignin = () => {
-
+        setloading(false)
         return signInWithPopup(auth, provider)
     }
     const githubSignin = () => {
-
+        setloading(true)
         return signInWithPopup(auth, GithubProvider)
     }
 
     const updateProfilePicture = (name, photo) => {
+
         return updateProfile(auth.currentUser, {
             displayName: name, photoURL: photo,
         })
@@ -49,7 +51,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
             setuser(currentuser)
-
+            setloading(false)
         })
         return () => {
             unsubscribe()
@@ -58,7 +60,7 @@ const AuthProvider = ({ children }) => {
 
     }, [])
 
-    const authinfo = { creatUser, creatregistation, user, logout, googleSignin, githubSignin, updateProfilePicture }
+    const authinfo = { creatUser, creatregistation, user, logout, googleSignin, githubSignin, updateProfilePicture, loading }
 
 
     return (

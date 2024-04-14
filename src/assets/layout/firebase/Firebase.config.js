@@ -5,13 +5,18 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+ console.log("firebase config", import.meta.env.VITE_PASS)
+
+
+
 const firebaseConfig = {
-    apiKey: "AIzaSyAPA4RLYfw5qdrXebK2aMIpTDcQt-7IwVQ",
-    authDomain: "dreems-home.firebaseapp.com",
-    projectId: "dreems-home",
-    storageBucket: "dreems-home.appspot.com",
-    messagingSenderId: "143229009364",
-    appId: "1:143229009364:web:0ff2adb82f5dc1df3e2a41"
+    apiKey:import.meta.env.VITE_apiKey,
+    authDomain:import.meta.env.VITE_authDomain,
+    projectId:import.meta.env.VITE_projectId,
+    storageBucket:import.meta.env.VITE_storageBucket,
+    messagingSenderId:import.meta.env.VITE_messagingSenderId,
+    appId:import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
