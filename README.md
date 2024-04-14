@@ -27,8 +27,12 @@ MyReactApp is a single-page web application built using React.js, Firebase, and 
 ## Challenges Task
 
 The npm package used for the challenges task is `dotenv` for managing environment variables securely.
-[Animate.css](https://animate.style/)
-[AOS Package](https://www.npmjs.com/package/aos)
+- Item 1 [Animate.css](https://animate.style/)
+- Item 2 [AOS Package](https://www.npmjs.com/package/aos)
+- Item 3
+
+
+
 
 
 
