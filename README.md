@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # MyWebsite
 
-# MyReactApp
+# Dreams Home
 
 [Live Site](https://www.myreactapp.com)
 
@@ -27,5 +27,5 @@ MyReactApp is a single-page web application built using React.js, Firebase, and 
 ## Challenges Task
 
 The npm package used for the challenges task is `dotenv` for managing environment variables securely.
-A: AOS Package,
-B: Animate.css,
+@ AOS Package,
+@ Animate.css,
