@@ -3,13 +3,16 @@ import { authContest } from "../layout/AuthProvider";
 import Navbar from "../shardComponent/Navbar";
 import { Helmet } from "react-helmet-async";
 import Footer from "../component/Footer"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const UpdatedProfile2 = () => {
 
-    const { updateProfilePicture } = useContext(authContest)
+    const { updateProfilePicture, user } = useContext(authContest)
 
-    const { user, } = useContext(authContest)
+    // const { user, } = useContext(authContest)
     console.log(user)
     const { displayName, email, photoURL,
     } = user
@@ -23,10 +26,12 @@ const UpdatedProfile2 = () => {
 
             .then((result) => {
                 console.log(result)
-                alert("successfully registation")
+                toast.success('successfully updated')
+                e.target.reset()
             })
             .catch((error) => {
                 console.log(error)
+                toast.warning('something wrong')
             })
 
 
@@ -102,6 +107,7 @@ const UpdatedProfile2 = () => {
             <section className="mt-9">
                 <Footer></Footer>
             </section>
+            <ToastContainer />
         </div>
     );
 };

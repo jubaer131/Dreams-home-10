@@ -62,13 +62,13 @@ const Register = () => {
             .then((result) => {
                 // Signed up 
                 console.log(result.user)
-                toast.success('successfully register') // Call notify function here
+                toast.success('successfully registation') // Call notify function here
                 // e.target.reset()
                 // navigate('/login')
 
                 updateProfilePicture(name, photo)
                     .then((result) => {
-
+                        e.target.reset()
                     })
                     .catch((error) => {
                         console.log(error)
