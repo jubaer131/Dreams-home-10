@@ -14,17 +14,17 @@ Secondary Goals: Provide information about the company, its services, and establ
 
 
 #  Key Features 
-* Item 1 Homepage:
+*  Homepage:
 
 Welcomes visitors and introduces Dreams Home.
 Highlights featured properties or current promotions.
 Call-to-action buttons for property search or contacting the company.
 <br><br/>
-## About Us:
+*  About Us:
 
 Company background, history, and values.
 <br><br/>
-## Contact Us:
+*  Contact Us:
 
 Contact form or details for inquiries.
 
