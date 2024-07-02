@@ -5,8 +5,9 @@
 "Dreams Home" is a Real Estate Company Website
 # Website Purpose:
 
-Primary Goal: To showcase available properties for sale or rent, attracting potential buyers and renters.
-Secondary Goals: Provide information about the company, its services, and establish credibility in the real estate market.
+* Primary Goal: To showcase available properties for sale or rent, attracting potential buyers and renters.
+ <br><br/>
+* Secondary Goals: Provide information about the company, its services, and establish credibility in the real estate market.
 
 [Live Site](https://www.myreactapp.com)
 <br><br/>
@@ -55,5 +56,3 @@ npm start
 By following these steps, the person can effectively clone, set up, and start working on the "Dreams Home" website project locally on their machine. These steps may vary slightly depending on the project's specific technologies and setup requirements.
 
 
-
->>>>>>> 0c3d7250754cc0c62484344ee53a6ec597db109a
