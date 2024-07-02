@@ -17,9 +17,9 @@
 #  Key Features 
 *  Homepage:
 
-Welcomes visitors and introduces Dreams Home.
-Highlights featured properties or current promotions.
-Call-to-action buttons for property search or contacting the company.
+* Welcomes visitors and introduces Dreams Home.
+* Highlights featured properties or current promotions.
+* Call-to-action buttons for property search or contacting the company.
 <br><br/>
 *  About Us:
 Company background, history, and values.
