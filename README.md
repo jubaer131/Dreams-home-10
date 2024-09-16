@@ -39,3 +39,18 @@ Frontend: HTML5, CSS3, react.js, JavaScript for interactive features and respons
 * Setup Environment Variables: Create .env file if needed.
 * Run the Project: Follow README instructions, npm start.
 This setup enables cloning, setup, and local development of Travelmate, focusing on efficient travel planning and customer engagement.
+
+## Installation Steps
+
+1. Clone the repository:
+    ```sh
+   https://github.com/jubaer131/Drems-home-client-side
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd folder-name
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
